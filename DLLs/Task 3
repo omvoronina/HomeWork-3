@@ -1,0 +1,8 @@
+# 3. В массиве случайных целых чисел поменять местами минимальный и максимальный элементы.
+#
+array = [1, 3, 5, 7, 9, 45, 33, 6]
+ind_max, max = array.index(max(array)), max(array)
+ind_min, min = array.index(min(array)), min(array)
+array[ind_max] = min
+array[ind_min] = max
+print(array)

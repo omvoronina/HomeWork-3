@@ -1,0 +1,5 @@
+# 4. Определить, какое число в массиве встречается чаще всего.
+
+array = input('Введите элементы массива (числа) через пробел  ').split(' ')
+list = [array.count(i) for i in array]
+print('Чаще всего в массиве встречается число  ' + array[list.index(max([array.count(i) for i in array]))])
